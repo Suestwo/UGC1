@@ -1,0 +1,97 @@
+<Dungeon id="The Hive">
+  <Width>128</Width>
+  <Height>128</Height>
+  <MainBranchLen>7</MainBranchLen>
+  <NumSubBranches>4</NumSubBranches>
+  <MinSubBranchLen>1</MinSubBranchLen>
+  <MaxSubBranchLen>4</MaxSubBranchLen>
+  <MinHallwayWidth>3</MinHallwayWidth>
+  <MaxHallwayWidth>4</MaxHallwayWidth>
+  <MinHallwayLen>4</MinHallwayLen>
+  <MaxHallwayLen>7</MaxHallwayLen>
+  <HallwayTile>TH Floor</HallwayTile>
+  <WallObj><Obj>TH Wall</Obj></WallObj>	
+  <SurroundWith>TH Honey</SurroundWith>
+ <!-- <GlobalReplaceTile func="perlinMod" dx=".001" dy=".001" mod="6">TH Honey</GlobalReplaceTile>	-->
+ <GlobalPlaceObject func="perlinProb" dx=".01" dy=".01" mult=".05" groundRestrict="TH Floor">TH honey Heal</GlobalPlaceObject>
+ <GlobalPlaceObject func="perlinProb" dx=".01" dy=".01" mult=".01" groundRestrict="TH Floor">TH Chunk1</GlobalPlaceObject>
+ <GlobalPlaceObject func="perlinProb" dx=".001" dy=".001" mult=".01" groundRestrict="TH Floor">TH Chunk2</GlobalPlaceObject>
+ <GlobalPlaceObject func="perlinProb" dx=".001" dy=".002" mult=".01" groundRestrict="TH Floor">TH Chunk3</GlobalPlaceObject>
+ <GlobalPlaceObject func="perlinProb" dx=".001" dy=".003" mult=".01" groundRestrict="TH Floor">TH Chunk4</GlobalPlaceObject>
+  <RandomizeGlobalReplaceTiles/>
+  <Visibility>Path</Visibility>
+  
+  <Difficulty>2</Difficulty>
+  
+  <Room id="start">
+    <Type>Circle</Type>
+    <MinCircleRadius>6.0</MinCircleRadius>
+    <MaxCircleRadius>6.0</MaxCircleRadius>
+    <FloorTile>TH Floor</FloorTile>
+    <Enemies>
+      <Enemy position="centerPlusSalt">Portal of Cowardice</Enemy>
+    </Enemies>
+  </Room>
+  <Room id="default">
+    <Type>Circle</Type>
+    <MinCircleRadius>4.0</MinCircleRadius>
+    <MaxCircleRadius>7.0</MaxCircleRadius>
+    <FloorTile>TH Floor</FloorTile>
+    <Enemies>
+      <Enemy prob="1" minNum="3" maxNum="5">TH Fat Bees</Enemy>
+    </Enemies>
+    <Enemies>
+      <Enemy prob="1" minNum="0" maxNum="3">TH Red Fat Bees</Enemy>
+    </Enemies>
+    <Enemies>
+      <Enemy prob=".6" minNum="2" maxNum="5">TH Small Bees</Enemy>
+      <Enemy prob=".4" minNum="1" maxNum="1">TH Mini Hive</Enemy>
+    </Enemies>
+    <Enemies>
+    	<Enemy prob=".4" minNum="0" maxNum="2">TH Maggot Egg1</Enemy>
+    	<Enemy prob="1" minNum="0" maxNum="3">TH Maggot Egg2</Enemy>
+    	<Enemy prob="1" minNum="0" maxNum="3">TH Maggot Egg3</Enemy>
+    </Enemies>
+  </Room>
+  <Room id="branchEnd">
+    <Type>Circle</Type>
+    <MinCircleRadius>5.0</MinCircleRadius>
+    <MaxCircleRadius>7.0</MaxCircleRadius>
+    <FloorTile>TH Floor</FloorTile>
+    <Enemies>
+      <Enemy prob="1" minNum="3" maxNum="5">TH Fat Bees</Enemy>
+    </Enemies>
+    <Enemies>
+      <Enemy prob="1" minNum="0" maxNum="3">TH Red Fat Bees</Enemy>
+    </Enemies>
+    <Enemies>
+      <Enemy prob=".6" minNum="2" maxNum="5">TH Small Bees</Enemy>
+      <Enemy prob=".4" minNum="1" maxNum="1">TH Mini Hive</Enemy>
+    </Enemies>
+    <Enemies>
+    	<Enemy prob=".4" minNum="0" maxNum="2">TH Maggot Egg1</Enemy>
+    	<Enemy prob="1" minNum="0" maxNum="3">TH Maggot Egg2</Enemy>
+    	<Enemy prob="1" minNum="0" maxNum="3">TH Maggot Egg3</Enemy>
+    </Enemies>
+  </Room>
+  <Room id="end">
+  <!-- using random <LocalJM>theHive/thehive_boss.jm</LocalJM>
+  -->
+    <Type>Circle</Type>
+    <MinCircleRadius>10.0</MinCircleRadius>
+    <MaxCircleRadius>10.0</MaxCircleRadius>
+    <FloorTile>TH Floor</FloorTile>
+    <Enemies>
+      <Enemy position="centerPlusSalt" prob="1" minNum="1" maxNum="1">TH Queen Bee Summoner</Enemy>
+    </Enemies>
+    <Enemies>
+      <Enemy prob="1" minNum="1" maxNum="2">TH Maggot Egg1</Enemy>	
+    </Enemies>
+    <Enemies>
+      <Enemy prob="1" minNum="1" maxNum="2">TH Maggot Egg2</Enemy>
+    </Enemies>
+    <Enemies>
+      <Enemy prob="1" minNum="1" maxNum="2">TH Maggot Egg3</Enemy>
+    </Enemies> 
+  </Room>
+</Dungeon>

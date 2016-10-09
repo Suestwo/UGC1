@@ -1,0 +1,24 @@
+<Objects>
+  <Object type="0x11e" id="TH Stinger Large">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x58D</Index>
+    </Texture>
+  </Object>
+  <Object type="0x11f" id="TH Stinger Small">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x58C</Index>
+    </Texture>
+  </Object>
+  <Object type="0x130" id="TH Honey Daze">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x596</Index>
+    </Texture>
+    <AngleCorrection>1</AngleCorrection>
+  </Object>
+</Objects>

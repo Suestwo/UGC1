@@ -1,0 +1,67 @@
+<Object type="0x11b" id="The Hive Key">
+  <Class>Equipment</Class>
+  <Item/>
+  <DisplayId>{equip.The_Hive_key}</DisplayId>
+  <Texture>
+    <File>lofiObj3</File>
+    <Index>0x58b</Index>
+  </Texture>
+  <SlotType>10</SlotType>
+  <Description>{equip.A_key_which_opens_an_entrance_to_The_Hive}</Description>
+  <Sound>use_key</Sound>
+  <Consumable/>
+  <Soulbound/>
+  <Activate id="The Hive Portal">Create</Activate>
+</Object>
+<Object type="0x11c" id="TH Honey bottle">
+  <DisplayId>Bottled honey</DisplayId>
+  <Class>Equipment</Class>
+  <Item/>
+  <Texture>
+    <File>lofiObj3</File>
+    <Index>0x58e</Index>
+  </Texture>
+  <SlotType>10</SlotType>
+  <Description>{equip.A_yummy_treat}</Description>
+  <Sound>use_key</Sound>
+  <Consumable/>
+  <Activate effect="Healing" duration="10">ConditionEffectSelf</Activate>
+</Object>
+<Object type="0x131" id="HoneyScepter">
+	<Class>Equipment</Class>
+	<Item/>
+	<Texture>
+	<File>lofiObj3</File>
+	<Index>0x597</Index>
+	</Texture>
+	<SlotType>23</SlotType>
+	<Description>{equip.Stolen_from_the_Queen_Bee_herself}</Description>
+	<Sound>spell/fire_spray</Sound>
+	<Usable/>
+	<BagType>4</BagType>
+	<FameBonus>2</FameBonus>
+	<MpCost>90</MpCost>
+	<Activate totalDamage="100" maxTargets="10" color="0xffdf00">Lightning</Activate>
+	<feedPower>450</feedPower>
+	<DisplayId>Honey Scepter</DisplayId>
+	<Soulbound/>
+</Object>
+<Object type="0x132" id="Orb of Sweet Demise">
+	<Class>Equipment</Class>
+	<Item/>
+	<Texture>
+	<File>lofiObj3</File>
+	<Index>0x598</Index>
+	</Texture>
+	<SlotType>21</SlotType>
+	<Description>{equip.A_magical_honeycomb}</Description>
+	<Usable/>
+	<BagType>4</BagType>
+	<FameBonus>2</FameBonus>
+	<MpCost>90</MpCost>
+	<Activate effect="Slowed" duration="5" range="2" color="0xffdf00" target="enemy" center="mouse" visualEffect="8" useWisMod="false">GenericActivate</Activate>
+	<Activate duration="3">StasisBlast</Activate>
+	<feedPower>450</feedPower>
+	<DisplayId>Orb of Sweet Demise</DisplayId>
+	<Soulbound/>
+</Object>
